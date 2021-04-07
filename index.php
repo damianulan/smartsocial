@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head/header.php'; ?>
+<?php include 'head/header.php'; 
+  include 'php/autoload.class.php';
+  ?>
 <body>
 <div class="theme-layout">
 	
