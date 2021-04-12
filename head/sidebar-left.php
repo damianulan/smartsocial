@@ -1,0 +1,81 @@
+							<div class="col-lg-3">
+								<aside class="sidebar static">
+									<div class="widget">
+										<h4 class="widget-title">Shortcuts</h4>
+											<ul class="naves">
+												<li>
+													<i class="ti-clipboard"></i>
+													<a href="newsfeed.html" title="">Feed</a>
+												</li>
+												<li>
+													<i class="ti-mouse-alt"></i>
+													<a href="inbox.html" title="">Inbox</a>
+												</li>
+												<li>
+													<i class="ti-heart"></i>
+													<a href="page-likers.html" title="">likes</a>
+												</li>
+												<li>
+													<i class="ti-user"></i>
+													<a href="timeline-friends.html" title="">friends</a>
+												</li>
+												<li>
+													<i class="ti-image"></i>
+													<a href="timeline-photos.html" title="">images</a>
+												</li>
+												<li>
+													<i class="ti-video-camera"></i>
+													<a href="timeline-videos.html" title="">videos</a>
+												</li>
+												<li>
+													<i class="ti-comments-smiley"></i>
+													<a href="messages.html" title="">Messages</a>
+												</li>
+												<li>
+													<i class="ti-power-off"></i>
+													<a href="landing.html" title="">Logout</a>
+												</li>
+											</ul>
+										</div><!-- Shortcuts -->			
+									<div class="widget stick-widget">
+										<h4 class="widget-title">Who's follownig</h4>
+										<ul class="followers">
+											<li>
+												<figure><img src="images/resources/friend-avatar2.jpg" alt=""></figure>
+												<div class="friend-meta">
+													<h4><a href="timeline.php" title="">Kelly Bill</a></h4>
+													<a href="#" title="" class="underline">Add Friend</a>
+												</div>
+											</li>
+											<li>
+												<figure><img src="images/resources/friend-avatar4.jpg" alt=""></figure>
+												<div class="friend-meta">
+													<h4><a href="timeline.php" title="">Issabel</a></h4>
+													<a href="#" title="" class="underline">Add Friend</a>
+												</div>
+											</li>
+											<li>
+												<figure><img src="images/resources/friend-avatar6.jpg" alt=""></figure>
+												<div class="friend-meta">
+													<h4><a href="timeline.php" title="">Andrew</a></h4>
+													<a href="#" title="" class="underline">Add Friend</a>
+												</div>
+											</li>
+											<li>
+												<figure><img src="images/resources/friend-avatar8.jpg" alt=""></figure>
+												<div class="friend-meta">
+													<h4><a href="timeline.php" title="">Sophia</a></h4>
+													<a href="#" title="" class="underline">Add Friend</a>
+												</div>
+											</li>
+											<li>
+												<figure><img src="images/resources/friend-avatar3.jpg" alt=""></figure>
+												<div class="friend-meta">
+													<h4><a href="timeline.php" title="">Allen</a></h4>
+													<a href="#" title="" class="underline">Add Friend</a>
+												</div>
+											</li>
+										</ul>
+									</div><!-- who's following -->
+								</aside>
+							</div><!-- sidebar -->
