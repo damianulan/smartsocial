@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head/header.php'; 
+<?php require_once 'head/header.php'; 
   include 'php/autoload.class.php';
   ?>
 <body>
 <div class="theme-layout">
-	<?php include 'head/nav.php'; ?>		
+	<?php require_once 'head/nav.php'; ?>		
 	<section>
 		<div class="gap gray-bg">
 			<div class="container-fluid">

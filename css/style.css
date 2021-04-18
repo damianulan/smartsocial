@@ -1,11 +1,5 @@
 /*
 
-[Master Stylesheet]
-
-Project Name: winku (HMTL Template)
-Version:    1.1
-Last change:  4/september/18
-
 ====INDEX=====
 
 01- general styling
@@ -495,7 +489,7 @@ header.sticky {
 }
 
 .land-featurearea {
-    background: #1fb6ff none repeat scroll 0 0;
+    background: #36B7B7 none repeat scroll 0 0;
     color: #fff;
     float: left;
     height: 100vh;
@@ -538,7 +532,7 @@ header.sticky {
 }
 
 .friend-logo > span::before,
-.friend-logo > span::after {
+/*.friend-logo > span::after {
     background: #0a98dc none repeat scroll 0 0;
     border: 16px solid rgba(255, 255, 255, 0.1);
     border-radius: 100%;
@@ -549,7 +543,7 @@ header.sticky {
     top: 20px;
     width: 180px;
     z-index: -1;
-}
+}*/
 
 .land-meta > a.folow-me:hover {
     text-shadow: 0 1px 1px #454545;
