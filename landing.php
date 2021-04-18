@@ -43,7 +43,7 @@
 							</div>
 							<a href="#" title="" class="forgot-pwd">Forgot Password?</a>
 							<div class="submit-btns">
-								<button class="mtr-btn signin" type="button"><span>Login</span></button>
+								<a href="auth.php?email"><button class="mtr-btn signin" type="button"><span>Login</span></button></a>
 								<button class="mtr-btn signup" type="button"><span>Register</span></button>
 							</div>
 						</form>
