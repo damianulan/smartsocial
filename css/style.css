@@ -1487,12 +1487,22 @@ form button {
     color: green;
     cursor: pointer;
     transition: all 0.2s linear 0s;
+
 }
 
 .we-video-info > ul li span.like:hover .we-video-info > ul li span.dislike:hover {
-    trnsform: scale(1.1);
+    transform: scale(1.1);
 }
 
+.coment-area > .we-comet li span.like-comment{
+    color:#31b7c0;
+}
+.coment-area > .we-comet li span ins{
+    font-size:10px;
+    padding-left: 5px;
+    text-decoration: none;
+    position: absolute;
+}
 
 /*--- social icons opening hovers style ---*/
 
