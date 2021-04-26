@@ -3,12 +3,13 @@
 spl_autoload_register("myAutoLoader");
 
 function myAutoLoader($className) {
+	$path = 'php/';
 	$extension = '.class.php';
-	$filename = $className.$extension;
+	$filename = $path.$className.$extension;
 
 	if(!file_exists($filename)){
 		return false;
 	}
 
-	include_once $className.$extension;
+	include_once $path.$className.$extension;
 }
