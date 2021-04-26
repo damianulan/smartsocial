@@ -7,17 +7,21 @@ class Db {
 	private $dbName = "smartsocial";
 
 	protected function connect(){
-		$dsn = 'mysql:host='.$this->host.'dbName='.$this->dbName;
+		$dsn = 'mysql:host='.$this->host.';dbname='.$this->dbName;
 		$pdo = new PDO($dsn, $this->user, $this->pwd);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 		return $pdo;
 	}
 
 	function getAll($tableName, $column){
-		$sql = "SELECT * FROM ".$tableName;
-		$stmt = $this->connect()->query($sql);
-		while($row = $stmt->fetch()){
-			echo $row[$column].'<br>';
+		try {
+			$sql = "SELECT * FROM ".$tableName;
+			$stmt = $this->connect()->query($sql);
+			while($row = $stmt->fetch()){
+				echo $row[$column].'<br>';
+			}
+		} catch(PDOException $e) {
+			print "Error!: " . $e->getMessage() . "<br/>";
 		}
 	}
 

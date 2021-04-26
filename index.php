@@ -1,11 +1,10 @@
-<?php $pagetitle = 'Your Feed'; ?>
+<?php $pagetitle = 'Your Feed';?>
 <!DOCTYPE html>
 <html lang="en">
 
 <?php require_once 'head/header.php';
 include 'php/autoload.class.php';
 ?>
-
 <body>
 	<div class="theme-layout">
 		<?php require_once 'head/nav.php'; ?>
