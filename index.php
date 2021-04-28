@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['email']) || $_SESSION['email']!= true){
+	header("location: landing.php");
+	exit;
+}
+
+?>
+
 <?php $pagetitle = 'Your Feed';?>
 <!DOCTYPE html>
 <html lang="en">
