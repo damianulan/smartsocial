@@ -139,6 +139,8 @@ include 'php/autoload.class.php';
 												<div class="coment-area">
 													<ul class="we-comet">
 														<li>
+														<!-- <ul> -->
+														<!-- <li> -->
 															<div class="comet-avatar">
 																<img src="images/resources/comet-1.jpg" alt="">
 															</div>
@@ -146,14 +148,27 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>														
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>200</ins>
 																	</span>
 																</div>
 																<p>we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post</p>
+															</div>	
+															<!-- <li class="post-comment">												z	 -->
+															<div class="comnt comnt-reply"  >
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton" onclick="$('.post-reply-box').hide();">cancel</button>
+																	</form>
+																</div>
 															</div>
+														<!-- </li> -->
+														<!-- </ul> -->
+															
 															<ul>
 																<li>
 																	<div class="comet-avatar">
@@ -163,7 +178,7 @@ include 'php/autoload.class.php';
 																		<div class="coment-head">
 																			<h5><a href="timeline.php" title="">alexendra dadrio</a></h5>
 																			<span>1 month ago</span>
-																			<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																			<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>														
 																			<span class="like-comment" data-toggle="tooltip" title="like">
 																				<i class="ti-heart"></i>
 																				<ins>150</ins>
@@ -171,6 +186,17 @@ include 'php/autoload.class.php';
 																		</div>
 																		<p>yes, really very awesome car i see the features of this car in the official website of <a href="#" title="">#Mercedes-Benz</a> and really impressed :-)</p>
 																	</div>
+																	<!-- reply -->
+																	<div class="comnt comnt-reply">
+																		<div class="post-reply-box" style="padding:10px; display: none;">
+																			<form method="post">
+																				<textarea placeholder="You're Replying..."></textarea>	
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton">cancel</button>
+																			</form>
+																		</div>
+																	</div>
+																	<!-- reply -->
 																</li>
 																<li>
 																	<div class="comet-avatar">
@@ -180,7 +206,7 @@ include 'php/autoload.class.php';
 																		<div class="coment-head">
 																			<h5><a href="timeline.php" title="">Olivia</a></h5>
 																			<span>16 days ago</span>
-																			<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																			<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																			<span class="like-comment" data-toggle="tooltip" title="like">
 																				<i class="ti-heart"></i>
 																				<ins>280</ins>
@@ -188,6 +214,17 @@ include 'php/autoload.class.php';
 																		</div>
 																		<p>i like lexus cars, lexus cars are most beautiful with the awesome features, but this car is really outstanding than lexus</p>
 																	</div>
+																	<!-- reply -->
+																	<div class="comnt comnt-reply">
+																		<div class="post-reply-box" style="padding:10px; display: none;">
+																			<form method="post">
+																				<textarea placeholder="You're Replying..."></textarea>	
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton">cancel</button>
+																			</form>
+																		</div>
+																	</div>
+																	<!-- reply -->
 																</li>
 															</ul>
 														</li>
@@ -199,7 +236,7 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Donald Trump</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>100</ins>
@@ -209,6 +246,17 @@ include 'php/autoload.class.php';
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>
@@ -313,7 +361,6 @@ include 'php/autoload.class.php';
 															</ul>
 														</div>
 														<div class="description">
-
 															<p>
 																Lonely Cat Enjoying in Summer Curabitur <a href="#" title="">#mypage</a> ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
 															</p>
@@ -330,7 +377,7 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -338,7 +385,17 @@ include 'php/autoload.class.php';
 																</div>
 																<p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
 															</div>
-
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+															<!-- reply -->
 														</li>
 														<li>
 															<div class="comet-avatar">
@@ -348,7 +405,7 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Sophia</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>148</ins>
@@ -358,6 +415,17 @@ include 'php/autoload.class.php';
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>
@@ -483,7 +551,7 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -491,7 +559,17 @@ include 'php/autoload.class.php';
 																</div>
 																<p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
 															</div>
-
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+															<!-- reply -->
 														</li>
 														<li>
 															<div class="comet-avatar">
@@ -501,7 +579,7 @@ include 'php/autoload.class.php';
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Sophia</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -511,6 +589,17 @@ include 'php/autoload.class.php';
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>

@@ -47,14 +47,14 @@ $('.friendz-list > li, .chat-users > li').on('click', function() {
 
 // delete notifications
 $('.notification-box > ul li > i.del').on("click", function(){
-    $(this).parent().slideUp();
+	$(this).parent().slideUp();
 	return false;
   }); 	
 
 /*--- socials menu scritp ---*/	
 	$('.f-page > figure i').on("click", function() {
 	    $(".drop").toggleClass("active");
-	  });
+	});
 
 //===== Search Filter =====//
 	(function ($) {
@@ -113,8 +113,8 @@ $('.notification-box > ul li > i.del').on("click", function(){
 
 		
 		$('.stick').stick_in_parent({
-		    parent: 'body',
-            offset_top: 0,
+			parent: 'body',
+        	offset_top: 0,
 		});
 		
 	}
@@ -323,7 +323,22 @@ jQuery(".post-comt-box textarea").on("keydown", function(event) {
 		jQuery(this).val('');
 	}
 }); 
-	
+
+// reply
+
+$(function(){
+	$(".fa-reply").on("click",function(){
+		$(".post-reply-box").show();
+	});
+});
+
+$(function(){
+	$(".cancelButton").on("click",function(){
+		$(".post-reply-box").hide();
+		
+	});
+});
+
 //inbox page 	
 //***** Message Star *****//  
     $('.message-list > li > span.star-this').on("click", function(){
