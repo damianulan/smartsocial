@@ -4,7 +4,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 	<title>SmartSocial - <?php echo $pagetitle; ?></title>
-    
+
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
