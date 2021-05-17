@@ -1,10 +1,34 @@
+<?php
+include 'php/autoload.class.php';
+session_start();
+
+if(!isset($_SESSION['isLoggedIn'])){ //Checks if user didn't get here in unwanted way.
+	header("Location: landing.php"); //If so, it sends him away.
+	exit();
+} else if((time() - $_SESSION['time']) > $GLOBALS['time']){ // Deletes session after 'x' seconds
+	session_destroy();
+	header("Location: landing.php");
+	exit();
+}
+
+$_SESSION['time'] = time(); //Updates the session 'lifespan'
+
+echo $_SESSION['userID'];
+echo $_SESSION['userEmail'];
+echo $_SESSION['userName'];
+echo $_SESSION['userSurname'];
+echo $_SESSION['pass'];
+echo $_SESSION['pwd'];
+
+$id = $_SESSION['userID'];
+$user = new User();
+?>
+
 <?php $pagetitle = 'Your Feed';?>
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require_once 'head/header.php';
-include 'php/autoload.class.php';
-?>
+<?php require_once 'head/header.php';?>
 <body>
 	<div class="theme-layout">
 		<?php require_once 'head/nav.php'; ?>
@@ -67,7 +91,7 @@ include 'php/autoload.class.php';
 														<img src="images/resources/friend-avatar10.jpg" alt="">
 													</figure>
 													<div class="friend-name">
-														<ins><a href="timeline.php" title="">Janice Griffith</a></ins>
+														<ins><a href="timeline.php" title=""><?php $user->getFullName($id); ?></a></ins>
 														<span>published: june,2 2018 19:PM</span>
 													</div>
 													<div class="post-meta">

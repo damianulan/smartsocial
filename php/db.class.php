@@ -1,5 +1,5 @@
 <?php
-
+// Class responisble for handling the connection between website and database
 class Db {
 	private $host = "83.16.17.101:7171";
 	private $user = "smartsocial";
@@ -14,25 +14,21 @@ class Db {
 	}
 
 	function getAll($tableName, $column){
-		try {
-			$sql = "SELECT * FROM ".$tableName;
-			$stmt = $this->connect()->query($sql);
-			while($row = $stmt->fetch()){
-				echo $row[$column].'<br>';
-			}
-		} catch(PDOException $e) {
-			print "Error!: " . $e->getMessage() . "<br/>";
+		$sql = "SELECT * FROM ".$tableName;
+		$stmt = $this->connect()->query($sql);
+		while($row = $stmt->fetch()){
+			echo $row[$column].'<br>';
 		}
 	}
 
 	function getOne($tableName, $column, $id){
-		$sql = "SELECT * FROM ".$tableName." WHERE ".$column." = ".$id;
+		$sql = "SELECT " .$column. " FROM ".$tableName." WHERE id = ".$id;
 		$stmt = $this->connect()->prepare($sql);
-		$stmt->execute([$id]);
-		$names = $stmt->fetchAll();
+		$stmt->execute([]);
+		$rows = $stmt->fetchAll();
 
-		foreach($names as $name){
-			echo $name[$column].'<br>';
+		foreach($rows as $rows){
+			echo $row[$column].'<br>';
 		}
 	}
 }

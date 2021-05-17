@@ -1,3 +1,19 @@
+<?php
+include 'php/autoload.class.php';
+session_start();
+
+if(!isset($_SESSION['isLoggedIn'])){ //Checks if user didn't get here in unwanted way.
+	header("Location: landing.php"); //If so, it sends him away.
+	exit();
+} else if((time() - $_SESSION['time']) > $GLOBALS['time']){ // Deletes session after 'x' seconds
+	session_destroy();
+	header("Location: landing.php");
+	exit();
+}
+
+$_SESSION['time'] = time(); //Updates the session 'lifespan'
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +76,7 @@ include 'head/header.php'; ?>
 			</div>
 		</div>
 	</section><!-- top area -->
-		
+
 	<section>
 		<div class="gap gray-bg">
 			<div class="container-fluid">
@@ -124,7 +140,7 @@ include 'head/header.php'; ?>
 													<span>published: june,2 2018 19:PM</span>
 												</div>
 												<div class="description">
-														
+
 														<p>
 															World's most beautiful car in Curabitur <a href="#" title="">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
 														</p>
@@ -137,10 +153,10 @@ include 'head/header.php'; ?>
 														<span>Love Maid - ChillGroves</span>
 														<p>Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
 														<a href="#" title="">www.sample.com</a>
-													</div>		
+													</div>
 													<div class="we-video-info">
 														<ul>
-															
+
 															<li>
 																<span class="views" data-toggle="tooltip" title="views">
 																	<i class="fa fa-eye"></i>
@@ -218,7 +234,7 @@ include 'head/header.php'; ?>
 													<img src="images/resources/user-post.jpg" alt="">
 													<div class="we-video-info">
 														<ul>
-															
+
 															<li>
 																<span class="views" data-toggle="tooltip" title="views">
 																	<i class="fa fa-eye"></i>
@@ -279,7 +295,7 @@ include 'head/header.php'; ?>
 														</ul>
 													</div>
 													<div class="description">
-														
+
 														<p>
 															Curabitur world's most beautiful car in <a href="#" title="">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
 														</p>
@@ -372,7 +388,7 @@ include 'head/header.php'; ?>
 																	<i class="em em-stuck_out_tongue"></i>
 																</div>
 																<button type="submit"></button>
-															</form>	
+															</form>
 														</div>
 													</li>
 												</ul>
@@ -393,7 +409,7 @@ include 'head/header.php'; ?>
 													<iframe src="https://player.vimeo.com/video/15232052" height="315" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 													<div class="we-video-info">
 														<ul>
-															
+
 															<li>
 																<span class="views" data-toggle="tooltip" title="views">
 																	<i class="fa fa-eye"></i>
@@ -454,7 +470,7 @@ include 'head/header.php'; ?>
 														</ul>
 													</div>
 													<div class="description">
-														
+
 														<p>
 															Lonely Cat Enjoying in Summer Curabitur <a href="#" title="">#mypage</a> ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
 														</p>
@@ -520,7 +536,7 @@ include 'head/header.php'; ?>
 																	<i class="em em-stuck_out_tongue"></i>
 																</div>
 																<button type="submit"></button>
-															</form>	
+															</form>
 														</div>
 													</li>
 												</ul>
@@ -530,20 +546,20 @@ include 'head/header.php'; ?>
 								</div>
 							</div><!-- centerl meta -->
 							<?php include 'head/sidebar-right.php' ?>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
 	<?php include 'head/footer.php'; ?>
 </div>
-<!-- side panel -->		
-	<?php include 'head/side-panel.php'; ?>		
-	
+<!-- side panel -->
+	<?php include 'head/side-panel.php'; ?>
+
 	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.min.js"></script>
 	<script src="js/script.js"></script>
 
-</body>	
+</body>
 
 </html>
