@@ -10,7 +10,7 @@
   $email = $_POST['email'];
   $password = $_POST['pwd'];
 
-  $list = $user->verify($email, $password);
+  $list = $user->login($email, $password);
 
   session_start();
   $_SESSION['userID'] = $list['userID'];

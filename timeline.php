@@ -13,6 +13,8 @@ if(!isset($_SESSION['isLoggedIn'])){ //Checks if user didn't get here in unwante
 
 $_SESSION['time'] = time(); //Updates the session 'lifespan'
 
+$user = new User();
+$post = new Post();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,11 +59,10 @@ include 'head/header.php'; ?>
 						<div class="timeline-info">
 							<ul>
 								<li class="admin-name">
-								  <h5>Janice Griffith</h5>
-								  <span>Group Admin</span>
+								  <h5><?php $user -> getFullName($_SESSION['userID']); ?></h5>
 								</li>
 								<li>
-									<a class="active" href="time-line.html" title="" data-ripple="">time line</a>
+									<a class="active" href="timeline.php" title="" data-ripple="">time line</a>
 									<a class="" href="timeline-photos.html" title="" data-ripple="">Photos</a>
 									<a class="" href="timeline-videos.html" title="" data-ripple="">Videos</a>
 									<a class="" href="timeline-friends.html" title="" data-ripple="">Friends</a>
@@ -92,8 +93,8 @@ include 'head/header.php'; ?>
 												<img src="images/resources/admin2.jpg" alt="">
 											</figure>
 											<div class="newpst-input">
-												<form method="post">
-													<textarea rows="2" placeholder="write something"></textarea>
+												<form action="timeline_Post.php" method="post">
+													<textarea rows="2" name="content" placeholder="write something"></textarea>
 													<div class="attachments">
 														<ul>
 															<li>
@@ -121,7 +122,7 @@ include 'head/header.php'; ?>
 																</label>
 															</li>
 															<li>
-																<button type="submit">Publish</button>
+																<button type="submit" name="submit_button">Publish</button>
 															</li>
 														</ul>
 													</div>
@@ -129,6 +130,16 @@ include 'head/header.php'; ?>
 											</div>
 										</div>
 									</div><!-- add post new box -->
+
+									<?php
+									$result = $post -> posts($_SESSION['userID']);
+									if(empty($result)){
+									?>
+									 <p class="user-post">No posts yet!</p>
+									<?php
+								 	} else {
+										foreach($result as $row) {
+									?>
 									<div class="central-meta item">
 										<div class="user-post">
 											<div class="friend-info">
@@ -136,91 +147,23 @@ include 'head/header.php'; ?>
 													<img src="images/resources/friend-avatar10.jpg" alt="">
 												</figure>
 												<div class="friend-name">
-													<ins><a href="time-line.html" title="">Janice Griffith</a></ins>
-													<span>published: june,2 2018 19:PM</span>
+													<ins><a href="timeline.php" title=""><?php $user -> getFullName($_SESSION['userID']); ?></a></ins>
+													<span><?php echo $row['created']; ?></span>
 												</div>
 												<div class="description">
-
 														<p>
-															World's most beautiful car in Curabitur <a href="#" title="">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
+															<?php echo $row['content']; ?>
 														</p>
 													</div>
-												<div class="post-meta">
-													<div class="linked-image align-left">
-														<a href="#" title=""><img src="images/resources/page1.jpg" alt=""></a>
-													</div>
-													<div class="detail">
-														<span>Love Maid - ChillGroves</span>
-														<p>Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
-														<a href="#" title="">www.sample.com</a>
-													</div>
-													<div class="we-video-info">
-														<ul>
 
-															<li>
-																<span class="views" data-toggle="tooltip" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-															</li>
-															<li>
-																<span class="comment" data-toggle="tooltip" title="Comments">
-																	<i class="fa fa-comments-o"></i>
-																	<ins>52</ins>
-																</span>
-															</li>
-															<li>
-																<span class="like" data-toggle="tooltip" title="like">
-																	<i class="ti-heart"></i>
-																	<ins>2.2k</ins>
-																</span>
-															</li>
-															<li>
-																<span class="dislike" data-toggle="tooltip" title="dislike">
-																	<i class="ti-heart-broken"></i>
-																	<ins>200</ins>
-																</span>
-															</li>
-															<li class="social-media">
-																<div class="menu">
-																  <div class="btn trigger"><i class="fa fa-share-alt"></i></div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-html5"></i></a></div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-facebook"></i></a></div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-google-plus"></i></a></div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-twitter"></i></a></div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-css3"></i></a></div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-instagram"></i></a>
-																	</div>
-																  </div>
-																	<div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-dribbble"></i></a>
-																	</div>
-																  </div>
-																  <div class="rotater">
-																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-pinterest"></i></a>
-																	</div>
-																  </div>
-
-																</div>
-															</li>
-														</ul>
-													</div>
-												</div>
 											</div>
 										</div>
 									</div>
-									<div class="central-meta item">
+									<?php
+										}
+									}
+									?>
+									<!-- <div class="central-meta item">
 										<div class="user-post">
 											<div class="friend-info">
 												<figure>
@@ -542,7 +485,7 @@ include 'head/header.php'; ?>
 												</ul>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div><!-- centerl meta -->
 							<?php include 'head/sidebar-right.php' ?>

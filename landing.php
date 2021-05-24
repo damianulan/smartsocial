@@ -43,7 +43,7 @@
 							<a href="#" title="" class="forgot-pwd">Forgot Password?</a>
 							<div class="submit-btns">
 								<button class="mtr-btn signin" type="submit" name="login_button"><span>Login</span></button>
-								<button class="mtr-btn signup" type="button" name="register_button"><span>Register</span></button>
+								<button class="mtr-btn signup" type="submit"><span>Register</span></button>
 							</div>
 						</form>
 					</div>
@@ -52,18 +52,18 @@
 							<p>
 								Don’t use SmartSocial Yet? <a href="#" title="">Join now</a>
 							</p>
-						<form method="post">
+						<form action="register.php" method="post">
 							<div class="form-group">
-							  <input type="text" required="required"/>
-							  <label class="control-label" for="input">First Name</label><i class="mtrl-select"></i>
+							  <input type="text" name="first_name" placeholder="First Name" required/>
+							  <label class="control-label" for="input"></label><i class="mtrl-select"></i>
 							</div>
 							<div class="form-group">
-							  <input type="text" required="required"/>
-							  <label class="control-label" for="input">Last Name</label><i class="mtrl-select"></i>
+							  <input type="text" name="last_name" placeholder="Last Name" required/>
+							  <label class="control-label" for="input"></label><i class="mtrl-select"></i>
 							</div>
 							<div class="form-group">
-							  <input type="password" required="required"/>
-							  <label class="control-label" for="input">Password</label><i class="mtrl-select"></i>
+							  <input type="password" name="pwd" placeholder="Password" required/>
+							  <label class="control-label" for="input"></label><i class="mtrl-select"></i>
 							</div>
 							<div class="form-radio">
 							  <div class="radio">
@@ -78,17 +78,17 @@
 							  </div>
 							</div>
 							<div class="form-group">
-							  <input type="text" required="required"/>
-							  <label class="control-label" for="input"><a href="https://wpkixx.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c29010d05002c">[email&#160;protected]</a></label><i class="mtrl-select"></i>
+							  <input type="text" name="email" placeholder="E-mail" required/>
+							  <label class="control-label" for="input"><a href="https://wpkixx.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c29010d05002c"></a></label><i class="mtrl-select"></i>
 							</div>
 							<div class="checkbox">
 							  <label>
-								<input type="checkbox" checked="checked"/><i class="check-box"></i>Accept Terms & Conditions ?
+								<input type="checkbox" checked="checked"/><i class="check-box"></i>Accept Terms & Conditions?
 							  </label>
 							</div>
 							<a href="#" title="" class="already-have">Already have an account</a>
 							<div class="submit-btns">
-								<button class="mtr-btn signup" type="button"><span>Register</span></button>
+								<button class="mtr-btn signup" type="submit" name="register_button"><span>Register</span></button>
 							</div>
 						</form>
 					</div>

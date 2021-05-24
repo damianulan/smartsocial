@@ -20,4 +20,4 @@ function myAutoLoader($className) { // Class name must be the same as file name
 	include_once $path.$className.$extension;
 }
 // Variable responsible for period of time after which session will be destroyed
-$GLOBALS['time'] = 5; // Expressed in numerical value of seconds
+$GLOBALS['time'] = 1800; // Expressed in numerical value of seconds, 30 min
