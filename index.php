@@ -17,8 +17,6 @@ echo $_SESSION['userID'];
 echo $_SESSION['userEmail'];
 echo $_SESSION['userName'];
 echo $_SESSION['userSurname'];
-echo $_SESSION['pass'];
-echo $_SESSION['pwd'];
 
 $id = $_SESSION['userID'];
 $user = new User();

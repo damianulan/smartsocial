@@ -2,7 +2,19 @@
 // Class responible for fetching the data from user table
 class User extends Db {
 
-  function verify($email, $pwd){
+  function signUp($email, $pwd, $firstName, $lastName){
+    $id = $this->checkID($email);
+    if($id == null){
+      header("Location: landing.php");
+      exit();
+    }
+
+    $sql = "INSERT INTO user(first_name, last_name, email, password, created) VALUES (?, ?, ?, ?, ?)";
+    $stmt = $this->connect()->prepare($sql);
+    $stmt->execute([$firstName, $lastName, $email, $pwd, date("Y-m-d h:i:s")]);
+  }
+
+  function login($email, $pwd){
 
     $sql = "SELECT password FROM user WHERE email = ?";
     $stmt = $this->connect()->prepare($sql);
@@ -30,7 +42,7 @@ class User extends Db {
     return $list;
   }
 
-  public function checkID($email){
+  function checkID($email){
     $sql = "SELECT id FROM user WHERE email = ?";
     $stmt = $this->connect()->prepare($sql);
     $stmt->execute([$email]);
@@ -38,7 +50,7 @@ class User extends Db {
 
     $id = "";
     foreach ($rows as $row) {
-      $id = $row['id'].'<br>';
+      $id = $row['id'];
     }
 
     return $id;
@@ -52,7 +64,7 @@ class User extends Db {
 
     $result = "";
   	foreach($rows as $row){
-  		$result = $row[$column].'<br>';
+  		$result = $row[$column];
   	}
 
     return $result;
