@@ -157,15 +157,15 @@ include 'php/autoload.class.php';
 																<p>we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post</p>
 															</div>	
 															<!-- <li class="post-comment">												z	 -->
-															<div class="comnt comnt-reply"  >
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton" onclick="$('.post-reply-box').hide();">cancel</button>
-																	</form>
-																</div>
-															</div>
+															<div class="comnt comnt-reply">
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 														<!-- </li> -->
 														<!-- </ul> -->
 															
@@ -188,39 +188,38 @@ include 'php/autoload.class.php';
 																	</div>
 																	<!-- reply -->
 																	<div class="comnt comnt-reply">
-																		<div class="post-reply-box" style="padding:10px; display: none;">
+															 			<div class="post-reply-box">
 																			<form method="post">
-																				<textarea placeholder="You're Replying..."></textarea>	
+																				<textarea placeholder="You are Replying..."></textarea>
 																				<button class="replyButton" type="submit">send</button>
-																				<button class="cancelButton">cancel</button>
+																				<button class="cancelButton" type="button">cancel</button>
 																			</form>
-																		</div>
-																	</div>
+															 			</div>
+															 		</div>
 																	<!-- reply -->
 																</li>
 																<li>
 																	<div class="comet-avatar">
 																		<img src="images/resources/comet-3.jpg" alt="">
 																	</div>
-																	<div class="we-comment">
+																		<div class="we-comment">
 																		<div class="coment-head">
 																			<h5><a href="timeline.php" title="">Olivia</a></h5>
 																			<span>16 days ago</span>
 																			<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																			<span class="like-comment" data-toggle="tooltip" title="like">
-																				<i class="ti-heart"></i>
-																				<ins>280</ins>
+																			<i class="ti-heart"></i>
+																			<ins>280</ins>
 																			</span>
 																		</div>
 																		<p>i like lexus cars, lexus cars are most beautiful with the awesome features, but this car is really outstanding than lexus</p>
-																	</div>
-																	<!-- reply -->
-																	<div class="comnt comnt-reply">
-																		<div class="post-reply-box" style="padding:10px; display: none;">
+																		</div>
+																		<div class="comnt comnt-reply">
+																		<div class="post-reply-box">
 																			<form method="post">
-																				<textarea placeholder="You're Replying..."></textarea>	
+																				<textarea placeholder="You are Replying..."></textarea>
 																				<button class="replyButton" type="submit">send</button>
-																				<button class="cancelButton">cancel</button>
+																				<button class="cancelButton" type="button">cancel</button>
 																			</form>
 																		</div>
 																	</div>
@@ -248,14 +247,14 @@ include 'php/autoload.class.php';
 															</div>
 															<!-- reply -->
 															<div class="comnt comnt-reply">
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton">cancel</button>
-																	</form>
-																</div>
-															</div>
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 															<!-- reply -->
 														</li>
 														<li>
@@ -387,14 +386,14 @@ include 'php/autoload.class.php';
 															</div>
 															<!-- reply -->
 															<div class="comnt comnt-reply">
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton">cancel</button>
-																	</form>
-																</div>
-															</div>
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 															<!-- reply -->
 														</li>
 														<li>
@@ -417,14 +416,14 @@ include 'php/autoload.class.php';
 															</div>
 															<!-- reply -->
 															<div class="comnt comnt-reply">
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton">cancel</button>
-																	</form>
-																</div>
-															</div>
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 															<!-- reply -->
 														</li>
 														<li>
@@ -561,14 +560,14 @@ include 'php/autoload.class.php';
 															</div>
 															<!-- reply -->
 															<div class="comnt comnt-reply">
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton">cancel</button>
-																	</form>
-																</div>
-															</div>
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 															<!-- reply -->
 														</li>
 														<li>
@@ -591,14 +590,14 @@ include 'php/autoload.class.php';
 															</div>
 															<!-- reply -->
 															<div class="comnt comnt-reply">
-																<div class="post-reply-box" style="padding:10px; display: none;">
-																	<form method="post">
-																		<textarea placeholder="You're Replying..."></textarea>	
-																		<button class="replyButton" type="submit">send</button>
-																		<button class="cancelButton">cancel</button>
-																	</form>
-																</div>
-															</div>
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
 															<!-- reply -->
 														</li>
 														<li>
@@ -722,7 +721,7 @@ include 'php/autoload.class.php';
 										</div>
 									</div>
 								</div><!-- centerl meta -->
-								<?php include 'head/sidebar-right.php' ?>
+							<?php include 'head/sidebar-right.php' ?>
 							</div>
 						</div>
 					</div>
@@ -738,7 +737,7 @@ include 'php/autoload.class.php';
 	<script src="js/script.js"></script>
 	<script src="js/map-init.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>

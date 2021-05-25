@@ -326,16 +326,14 @@ jQuery(".post-comt-box textarea").on("keydown", function(event) {
 
 // reply
 
-$(function(){
-	$(".fa-reply").on("click",function(){
-		$(".post-reply-box").show();
+jQuery($ => { // updated document.ready handler
+	$(".we-reply").on("click", e => {
+	  e.preventDefault()
+	  $('.post-reply-box').hide(); // hide all
+	  $(e.target).closest('.we-comment').next('.comnt-reply').find(".post-reply-box").show(); // show relevant
 	});
-});
-
-$(function(){
-	$(".cancelButton").on("click",function(){
-		$(".post-reply-box").hide();
-		
+	$(".cancelButton").on("click", function() {
+	  $(".post-reply-box").hide();
 	});
 });
 
