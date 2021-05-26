@@ -162,6 +162,8 @@ $user = new User();
 												<div class="coment-area">
 													<ul class="we-comet">
 														<li>
+														<!-- <ul> -->
+														<!-- <li> -->
 															<div class="comet-avatar">
 																<img src="images/resources/comet-1.jpg" alt="">
 															</div>
@@ -169,14 +171,39 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>														
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>200</ins>
 																	</span>
 																</div>
 																<p>we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post</p>
+															</div>	
+															<!-- <li class="post-comment">												z	 -->
+<<<<<<< Updated upstream
+															<div class="comnt comnt-reply">
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+															<div class="comnt comnt-reply"  >
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton" onclick="$('.post-reply-box').hide();">cancel</button>
+																	</form>
+																</div>
 															</div>
+>>>>>>> Stashed changes
+														<!-- </li> -->
+														<!-- </ul> -->
+															
 															<ul>
 																<li>
 																	<div class="comet-avatar">
@@ -186,7 +213,11 @@ $user = new User();
 																		<div class="coment-head">
 																			<h5><a href="timeline.php" title="">alexendra dadrio</a></h5>
 																			<span>1 month ago</span>
-																			<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+<<<<<<< Updated upstream
+																			<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>														
+=======
+																			<a class="we-reply" href="javascript:void(0)"  title="Reply"><i class="fa fa-reply"></i></a>														
+>>>>>>> Stashed changes
 																			<span class="like-comment" data-toggle="tooltip" title="like">
 																				<i class="ti-heart"></i>
 																				<ins>150</ins>
@@ -194,23 +225,68 @@ $user = new User();
 																		</div>
 																		<p>yes, really very awesome car i see the features of this car in the official website of <a href="#" title="">#Mercedes-Benz</a> and really impressed :-)</p>
 																	</div>
+																	<!-- reply -->
+																	<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																		<div class="post-reply-box" style="padding:10px; display: none;">
+																			<form method="post">
+																				<textarea placeholder="You're Replying..."></textarea>	
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton">cancel</button>
+																			</form>
+																		</div>
+																	</div>
+>>>>>>> Stashed changes
+																	<!-- reply -->
 																</li>
 																<li>
 																	<div class="comet-avatar">
 																		<img src="images/resources/comet-3.jpg" alt="">
 																	</div>
-																	<div class="we-comment">
+																		<div class="we-comment">
 																		<div class="coment-head">
 																			<h5><a href="timeline.php" title="">Olivia</a></h5>
 																			<span>16 days ago</span>
-																			<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																			<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																			<span class="like-comment" data-toggle="tooltip" title="like">
-																				<i class="ti-heart"></i>
-																				<ins>280</ins>
+																			<i class="ti-heart"></i>
+																			<ins>280</ins>
 																			</span>
 																		</div>
 																		<p>i like lexus cars, lexus cars are most beautiful with the awesome features, but this car is really outstanding than lexus</p>
+																		</div>
+																		<div class="comnt comnt-reply">
+																		<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+																		</div>
 																	</div>
+																	<!-- reply -->
+<<<<<<< Updated upstream
+=======
+																	<div class="comnt comnt-reply">
+																		<div class="post-reply-box" style="padding:10px; display: none;">
+																			<form method="post">
+																				<textarea placeholder="You're Replying..."></textarea>	
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton">cancel</button>
+																			</form>
+																		</div>
+																	</div>
+																	<!-- reply -->
+>>>>>>> Stashed changes
 																</li>
 															</ul>
 														</li>
@@ -222,7 +298,7 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Donald Trump</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>100</ins>
@@ -232,6 +308,28 @@ $user = new User();
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+>>>>>>> Stashed changes
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>
@@ -336,7 +434,6 @@ $user = new User();
 															</ul>
 														</div>
 														<div class="description">
-
 															<p>
 																Lonely Cat Enjoying in Summer Curabitur <a href="#" title="">#mypage</a> ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
 															</p>
@@ -353,7 +450,7 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -361,7 +458,28 @@ $user = new User();
 																</div>
 																<p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
 															</div>
-
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+>>>>>>> Stashed changes
+															<!-- reply -->
 														</li>
 														<li>
 															<div class="comet-avatar">
@@ -371,7 +489,7 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Sophia</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>148</ins>
@@ -381,6 +499,28 @@ $user = new User();
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+>>>>>>> Stashed changes
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>
@@ -506,7 +646,7 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Jason borne</a></h5>
 																	<span>1 year ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -514,7 +654,28 @@ $user = new User();
 																</div>
 																<p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
 															</div>
-
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+>>>>>>> Stashed changes
+															<!-- reply -->
 														</li>
 														<li>
 															<div class="comet-avatar">
@@ -524,7 +685,7 @@ $user = new User();
 																<div class="coment-head">
 																	<h5><a href="timeline.php" title="">Sophia</a></h5>
 																	<span>1 week ago</span>
-																	<a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
+																	<a class="we-reply" href="javascript:void(0)" title="Reply"><i class="fa fa-reply"></i></a>
 																	<span class="like-comment" data-toggle="tooltip" title="like">
 																		<i class="ti-heart"></i>
 																		<ins>135</ins>
@@ -534,6 +695,28 @@ $user = new User();
 																	<i class="em em-smiley"></i>
 																</p>
 															</div>
+															<!-- reply -->
+															<div class="comnt comnt-reply">
+<<<<<<< Updated upstream
+															 			<div class="post-reply-box">
+																			<form method="post">
+																				<textarea placeholder="You are Replying..."></textarea>
+																				<button class="replyButton" type="submit">send</button>
+																				<button class="cancelButton" type="button">cancel</button>
+																			</form>
+															 			</div>
+															 		</div>
+=======
+																<div class="post-reply-box" style="padding:10px; display: none;">
+																	<form method="post">
+																		<textarea placeholder="You're Replying..."></textarea>	
+																		<button class="replyButton" type="submit">send</button>
+																		<button class="cancelButton">cancel</button>
+																	</form>
+																</div>
+															</div>
+>>>>>>> Stashed changes
+															<!-- reply -->
 														</li>
 														<li>
 															<a href="#" title="" class="showmore underline">more comments</a>
@@ -656,7 +839,7 @@ $user = new User();
 										</div>
 									</div>
 								</div><!-- centerl meta -->
-								<?php include 'head/sidebar-right.php' ?>
+							<?php include 'head/sidebar-right.php' ?>
 							</div>
 						</div>
 					</div>
@@ -672,7 +855,7 @@ $user = new User();
 	<script src="js/script.js"></script>
 	<script src="js/map-init.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
